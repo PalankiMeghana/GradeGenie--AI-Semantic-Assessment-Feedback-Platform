@@ -1,0 +1,648 @@
+
+:root {
+  /* Dark Theme Colors */
+  --primary-dark: #0a192f;
+  --primary: #112240;
+  --primary-light: #233554;
+  
+  --secondary-dark: #64ffda;
+  --secondary: #8892b0;
+  --secondary-light: #a8b2d1;
+  
+  --accent-dark: #00ff95;
+  --accent: #64ffda;
+  --accent-light: #9fffeb;
+  
+  --bg-dark: #0a192f;
+  --bg-light: #112240;
+  
+  --text-primary: #e6f1ff;
+  --text-secondary: #8892b0;
+  --text-accent: #64ffda;
+  
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  
+  /* Typography */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Landing Section Styles */
+.landing-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: #040714;
+  color: white;
+  overflow: hidden;
+}
+
+/* Stars Background */
+.stars-container {
+  position: absolute;
+  inset: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle ease-in-out infinite;
+}
+
+/* Grid Lines */
+.grid-lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: 
+    linear-gradient(to right, #00E5FF 1px, transparent 1px),
+    linear-gradient(to bottom, #00E5FF 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Container */
+.landing-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.landing-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .landing-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Left Content */
+.landing-text {
+  max-width: 576px;
+}
+
+.landing-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 32px;
+  background: linear-gradient(to right, #64ffda, #00E5FF, #9fffeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .landing-heading {
+    font-size: 3.75rem;
+  }
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #a8b2d1;
+}
+
+.quote-author {
+  color: #8892b0;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 500;
+  background: linear-gradient(to right, #64ffda, #00E5FF);
+  color: #040714;
+  transition: all 0.3s;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover .arrow-icon {
+  transform: translateX(4px);
+}
+/* =========================================================
+   RIGHT HERO ILLUSTRATION
+   Monitor + AI Brain
+   ========================================================= */
+
+.landing-illustration {
+  position: relative;
+  display: none;
+
+  width: 100%;
+  height: 480px;
+
+  align-items: center;
+  justify-content: center;
+
+  animation: illustrationFloat 6s ease-in-out infinite;
+}
+
+@media (min-width: 1024px) {
+  .landing-illustration {
+    display: flex;
+  }
+}
+
+
+/* =========================================================
+   COMPUTER MONITOR
+   ========================================================= */
+
+.student-illustration {
+  position: relative;
+
+  width: 430px;
+  height: 330px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+
+/* Monitor frame */
+
+.computer-frame {
+  position: relative;
+
+  width: 390px;
+  height: 250px;
+
+  border: 2px solid rgba(0, 229, 255, 0.45);
+  border-radius: 10px;
+
+  background: rgba(0, 20, 35, 0.18);
+
+  box-shadow:
+    0 0 12px rgba(0, 229, 255, 0.25),
+    inset 0 0 20px rgba(0, 229, 255, 0.04);
+
+  animation: monitorGlow 3.5s ease-in-out infinite;
+}
+
+
+/* Actual screen */
+
+.computer-screen {
+  position: absolute;
+
+  top: 14px;
+  left: 14px;
+
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
+
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  border-radius: 5px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 229, 255, 0.025),
+      rgba(0, 229, 255, 0.07)
+    );
+
+  box-shadow:
+    inset 0 0 25px rgba(0, 229, 255, 0.04);
+}
+
+
+/* Monitor stand */
+
+.computer-base {
+  position: absolute;
+
+  left: 50%;
+  bottom: -52px;
+
+  width: 90px;
+  height: 50px;
+
+  transform: translateX(-50%);
+
+  background: transparent;
+
+  border-left: 2px solid rgba(0, 229, 255, 0.4);
+  border-right: 2px solid rgba(0, 229, 255, 0.4);
+
+  box-shadow: none;
+}
+
+
+/* Monitor foot */
+
+.computer-base::after {
+  content: '';
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -10px;
+
+  width: 130px;
+  height: 6px;
+
+  transform: translateX(-50%);
+
+  border-radius: 10px;
+
+  background: rgba(0, 229, 255, 0.35);
+
+  box-shadow:
+    0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+
+/* =========================================================
+   BRAIN
+   ========================================================= */
+
+.brain-container {
+  position: absolute;
+
+  top: 70px;
+  right: 10px;
+
+  width: 145px;
+  height: 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3;
+}
+
+
+/* Glow behind brain */
+
+.brain-glow {
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 229, 255, 0.18);
+
+  filter: blur(30px);
+
+  animation: brainPulse 3s ease-in-out infinite;
+}
+
+
+/* Brain icon */
+
+.brain-icon {
+  position: relative;
+
+  width: 120px;
+  height: 120px;
+
+  color: #00E5FF;
+
+  z-index: 2;
+
+  filter:
+    drop-shadow(0 0 8px rgba(0, 229, 255, 0.8))
+    drop-shadow(0 0 20px rgba(0, 229, 255, 0.4));
+
+  animation: brainFloat 4s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes illustrationFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+
+@keyframes monitorGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 12px rgba(0, 229, 255, 0.20),
+      inset 0 0 20px rgba(0, 229, 255, 0.03);
+  }
+
+  50% {
+    box-shadow:
+      0 0 24px rgba(0, 229, 255, 0.38),
+      inset 0 0 25px rgba(0, 229, 255, 0.06);
+  }
+}
+
+
+@keyframes brainFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@keyframes brainPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 0.65;
+    transform: scale(1.1);
+  }
+}
+.gradient-wrapper {
+  background: #140257;
+  background: -webkit-linear-gradient(
+    170deg,
+    rgba(17, 34, 64, 0.7) 30%,
+    rgba(30, 203, 230, 1) 72%,
+    rgba(0, 255, 162, 1) 94%
+  );
+  background: -moz-linear-gradient(
+    170deg,
+    rgba(17, 34, 64, 0.7) 30%,
+    rgba(30, 203, 230, 1) 72%,
+    rgba(0, 255, 162, 1) 94%
+  );
+  background: linear-gradient(
+    170deg,
+    rgba(17, 34, 64, 0.7) 30%,
+    rgba(30, 203, 230, 1) 72%,
+    rgba(0, 255, 162, 1) 94%
+  );
+  padding: 2rem 0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(120deg, var(--accent), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: var(--space-2);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+section {
+  padding: var(--space-6) var(--space-2);
+  background-color: var(--bg-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--primary-dark);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.btn-lg {
+  padding: var(--space-2) var(--space-4);
+  font-size: 1.1rem;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Neon Effects */
+.neon-border {
+  box-shadow: 0 0 10px var(--accent),
+              0 0 20px var(--accent),
+              0 0 30px var(--accent);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px var(--accent),
+               0 0 20px var(--accent),
+               0 0 30px var(--accent);
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  section {
+    padding: var(--space-4) var(--space-2);
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+ 

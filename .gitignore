@@ -1,0 +1,27 @@
+# Python
+myvir/
+venv/
+.env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sw?
+
+# Optional: exclude training data if you don't want it public
+training_data.jsonl

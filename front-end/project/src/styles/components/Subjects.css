@@ -1,0 +1,195 @@
+/* --- START OF MODIFIED Subjects.css --- */
+
+/* Assuming :root variables (like --primary-color, --space-4, etc.)
+   are defined in a global CSS file (e.g., index.css, App.css, or from Upload.css context) */
+
+/* Common section styling - can be global */
+/* .content-section {
+  padding: var(--space-6) 0;
+  position: relative;
+  overflow: hidden;
+} */
+
+.subjects-section-container {
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+}
+
+.subjects-section-container h2 {
+  position: relative;
+  margin-bottom: var(--space-5);
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+.subjects-section-container h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  height: 4px;
+  width: 70px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.subjects-description {
+  max-width: 700px;
+  margin: 0 auto var(--space-6);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.subject-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-5);
+  text-align: left;
+}
+
+.subject-card {
+  background-color: var(--background-card);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.subject-card:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(79, 209, 197, 0.3);
+}
+
+.subject-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5) 0;
+  background-color: rgba(79, 209, 197, 0.1); /* Slightly less opaque */
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+  min-height: 80px; /* Ensure a minimum height for icon area consistency */
+}
+
+.subject-card:hover .subject-icon-wrapper {
+  background-color: rgba(79, 209, 197, 0.2); /* Darken on hover */
+}
+
+.subject-card-content {
+  padding: var(--space-5);
+  flex-grow: 1;
+}
+
+.subject-card h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+  font-size: 1.25rem; /* Or 1.3rem to match Upload.css h3 */
+}
+
+.subject-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.subject-card.selected {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 20px rgba(79, 209, 197, 0.25);
+  transform: translateY(-2px); /* Keep a slight lift or remove if preferred */
+}
+
+.subject-card.selected::after {
+  content: "Selected";
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  background-color: var(--primary-color);
+  color: var(--primary-text-on-accent);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  animation: fadeInSelectedBadge 0.3s ease-out;
+}
+
+@keyframes fadeInSelectedBadge {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+  .subject-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+  }
+   .subjects-section-container h2 {
+    font-size: 1.8rem;
+  }
+  .subjects-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .subject-cards {
+    grid-template-columns: 1fr; /* Single column */
+  }
+  .subjects-section-container {
+    padding: var(--space-5) var(--space-3);
+  }
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: var(--space-6) 0;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  display: flex; /* For aligning spinner icon and text */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner .spinner-icon { /* Simple text-based spinner, or use Upload.css .spinner */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--border-color-light);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Reusing spin animation */
+  margin-bottom: var(--space-3);
+}
+
+/* If .container class is not globally defined, add its definition here */
+.container {
+  max-width: 1200px; /* Or your project's standard container width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4); /* Standard horizontal padding */
+  padding-right: var(--space-4);
+}
+
+/* Re-define spin animation if not global (it was in Upload.css) */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- END OF MODIFIED Subjects.css --- */

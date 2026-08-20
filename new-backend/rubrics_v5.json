@@ -1,0 +1,1296 @@
+[
+  {
+    "question": "What is a computer and what are its characteristics?",
+    "evaluation_type": "multi_characteristics",
+    "reference_answer": "The word \"computer\" originates from the word \"TO COMPUTE\", which means to calculate. A computer is generally considered a calculation device that can perform arithmetic operations very speedily. It can also be defined as a device that operates upon data. Data can include numbers, letters, symbols, and size, varying in shape and size depending on the computer application. A computer can store, process, and retrieve data as desired. Because computers process data, many people call them \"Data Processors\". An electronic device, a computer takes input from the user, processes it, and provides output according to the user's requirements. The main tasks performed by a computer are Input, Process, and Output.\n\nKey characteristics of a computer include:\n\n• Automatic: Computers are automatic machines because they work by themselves without human intervention once a job is started. They work from instructions stored inside the system as programs.\n• Accuracy: Computers have very high accuracy. Errors can occur, but these are typically due to human weakness or incorrect data, not technological weakness.\n• Speed: Computers are very fast devices, capable of performing work in seconds that would take a human an entire year. Their speed is measured in microseconds or even billions (10⁹) of simple arithmetic operations per second for powerful computers.\n• Diligence: Unlike humans, computers are free from monotony, tiredness, and lack of concentration. They can work continuously for hours without errors or complaining, performing millions of calculations with the same accuracy and speed.\n• Versatility: This is a wonderful feature, allowing a computer to perform various tasks such as preparing exam results, electricity bills, or helping an office secretary find a letter in seconds.\n• Power of Remembering: Computers can store and recall any amount of data due to the high storage capacity of their devices. Information can be retained and recalled as long as the user desires.\n• No I.Q.: A computer is not a magical device and possesses no intelligence of its own; its I.Q. is zero. It must be explicitly told what to do and in what sequence and cannot make its own decisions.\n• No Feelings: Computers are machines and have no feelings. Unlike humans who make judgments based on feelings, taste, knowledge, and experience, a computer follows instructions exactly as given.",
+    "concepts": [
+      {
+        "text": "A computer is a calculation device that performs arithmetic operations very quickly.",
+        "weight": 0.0909
+      },
+      {
+        "text": "A computer operates on data and can store, process, and retrieve data.",
+        "weight": 0.0909
+      },
+      {
+        "text": "A computer accepts input, processes it, and provides output.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Automatic: works from stored instructions without continuous human intervention once started.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Accuracy: produces highly accurate results; errors are generally due to human weakness or incorrect data.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Speed: performs large amounts of work quickly; speed is described in microseconds or billions of operations per second.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Diligence: can work continuously without monotony, tiredness, or loss of concentration while maintaining accuracy and speed.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Versatility: can perform different kinds of tasks.",
+        "weight": 0.0909
+      },
+      {
+        "text": "Power of remembering: can store and recall large amounts of data for as long as required.",
+        "weight": 0.0909
+      },
+      {
+        "text": "No I.Q.: has no intelligence of its own and cannot make decisions without instructions.",
+        "weight": 0.0909
+      },
+      {
+        "text": "No Feelings: follows instructions without human feelings or judgments.",
+        "weight": 0.0909
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Explain the generations of computers.",
+    "evaluation_type": "generations",
+    "reference_answer": "In computer language, \"Generation\" refers to a set of technology that provides a framework for the growth of computer technology. There are five computer generations discussed in the source:\n\n1. First Generation (1942-1955):\n◦ Technology: Vacuum tube.\n◦ Use: Primarily as a calculating device.\n◦ Speed: Performed calculations in milliseconds.\n◦ Characteristics: Bulky in size, complex design, required a large room, generated too much heat (often burnt), required continuous hardware maintenance, and needed air-conditioned rooms.\n◦ Commercial Production: Difficult and costly.\n◦ Configuration: Difficult to configure.\n◦ Commercial Use: Limited.\n◦ Examples: ENIAC, EDVAC, EDSAC.\n\n2. Second Generation (1955-1964):\n◦ Technology: Transistor.\n◦ Size: 10 times smaller than first generation systems.\n◦ Heat/Power: Generated less heat and consumed less power than first generation computers.\n◦ Speed: Performed calculations in microseconds.\n◦ Requirements: Air-conditioner was still required.\n◦ Configuration: Easier to configure than first generation computers.\n◦ Reliability: More reliable in information.\n◦ Commercial Use: Wider commercial use.\n◦ Storage: Large and fast primary/secondary storage than first generation computers.\n\n3. Third Generation (1965-1975):\n◦ Technology: IC chip (Integrated Circuit).\n◦ Size: Smaller than first and second generation computers.\n◦ Speed: Performed faster calculations than second generation systems.\n◦ Storage: Large and fast primary/secondary storage than second generation computers.\n◦ Requirements: Air conditioner was required.\n◦ Commercial Use: Widely used for commercial applications.\n◦ Type: General purpose computers.\n◦ Programming: Allowed the use of high-level languages like COBOL and FORTRAN.\n◦ Heat/Power: Generated less heat and consumed less power than second generation computers.\n\n4. Fourth Generation (1975-1989):\n◦ Technology: Microprocessor chip, based on LSI (Large-Scale Integration) and VLSI (Very Large-Scale Integration).\n◦ Size: Smaller in size.\n◦ Speed: Much faster than previous generations.\n◦ Maintenance: Minimum hardware maintenance required.\n◦ Reliability: Very reliable compared to previous generation computers.\n◦ Type: Totally general purpose computer.\n◦ Connectivity: Possible to use network concepts to connect computers together.\n◦ Requirements: No requirement for air-conditioners.\n◦ Price: Cheapest in price.\n\n5. Fifth Generation (1989 to Present):\n◦ Technology: ULSI (Ultra Large-Scale Integration) microprocessor chip, containing 100 million electronic components.\n◦ Size: Much smaller and handy.\n◦ Speed: Increased speed of operations.\n◦ Power: Consumed less power.\n◦ Requirements: Air-conditioner is not required.\n◦ Interface: More user-friendly interface with multi-media features.\n◦ Programming: High level languages are allowed to write programs.\n◦ Storage: Larger and faster primary/secondary storage than previous generations.\n◦ Examples: Notebook computers.",
+    "concepts": [
+      {
+        "text": "Generation means a set of technology representing a stage in the growth of computer technology.",
+        "weight": 0.1667
+      },
+      {
+        "text": "First Generation (1942-1955): vacuum tubes; bulky, high heat, costly, limited commercial use; examples include ENIAC, EDVAC, and EDSAC.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Second Generation (1955-1964): transistors; about 10 times smaller, less heat/power, microsecond speed, wider commercial use.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Third Generation (1965-1975): integrated-circuit (IC) chips; smaller and faster, lower heat/power, wider commercial use, high-level languages.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Fourth Generation (1975-1989): microprocessor chips based on LSI/VLSI; smaller, faster, more reliable, network connectivity, no air-conditioning requirement.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Fifth Generation (1989-present): ULSI microprocessor chips; smaller, faster, lower power, multimedia-friendly interfaces, high-level languages, larger/faster storage.",
+        "weight": 0.1667
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Explain the functional units of a computer and the concept of an Information Processing System.",
+    "evaluation_type": "functional_units",
+    "reference_answer": "An Information Processing System accepts and gathers data (INPUT), processes data to become information (PROCESSING), stores data and information (STORE), and presents information (OUTPUT). A computer is an electronic machine that follows instructions to accept and gather data and transform it into information. Data is a collection of independent and unorganized facts, while Information is processed and organized data presented in a meaningful form. Data Processing is the course of doing things in a sequence of steps.\n\nThe basic hardware of a PC system includes the Central Processing Unit (CPU), Memory Unit, Input Devices, Output Devices, and Secondary Storage Devices. These components work together to perform the functions of an information processing system.",
+    "concepts": [
+      {
+        "text": "An Information Processing System accepts and gathers data (INPUT), processes it into information (PROCESSING), stores data/information (STORE), and presents information (OUTPUT).",
+        "weight": 0.1667
+      },
+      {
+        "text": "A computer follows instructions to accept data and transform it into information.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Data is a collection of independent and unorganized facts.",
+        "weight": 0.0833
+      },
+      {
+        "text": "Information is processed and organized data presented in a meaningful form.",
+        "weight": 0.0833
+      },
+      {
+        "text": "Data processing is a sequence of steps for processing data.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Basic PC hardware units include CPU, Memory Unit, Input Devices, Output Devices, and Secondary Storage Devices.",
+        "weight": 0.1667
+      },
+      {
+        "text": "These hardware components work together to perform information-processing functions.",
+        "weight": 0.1667
+      }
+    ],
+    "status": "reviewed_fixed_v5_atomic"
+  },
+  {
+    "question": "What is the Central Processing Unit (CPU) and what are its components?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "The Central Processing Unit (CPU) is considered the brain of the computer. It directs and controls the entire computer system and performs all arithmetic and logical operations. The CPU controls the operations of all other parts of the computer but does not carry out any actual data processing operations itself.\n\nThe CPU's functions include controlling the transfer of data and instructions among other units, managing and coordinating all computer units, obtaining and interpreting instructions from memory, directing operations, and communicating with Input/Output devices for data transfer. The CPU itself does not process or store data directly.\n\nThe CPU consists of two main subsections:\n\n1. Arithmetic Section: Performs arithmetic operations like addition, subtraction, multiplication, and division. Complex operations are done by making repetitive use of these basic operations.\n2. Logic Section: Performs logic operations such as comparing, selecting, matching, and merging data.",
+    "concepts": [
+      {
+        "text": "The CPU is the brain of the computer and directs and controls the entire computer system.",
+        "weight": 0.2
+      },
+      {
+        "text": "The CPU performs arithmetic and logical operations.",
+        "weight": 0.2
+      },
+      {
+        "text": "The CPU controls transfer of data and instructions, obtains and interprets instructions from memory, directs operations, and communicates with I/O devices.",
+        "weight": 0.2
+      },
+      {
+        "text": "The CPU does not itself carry out actual data-processing operations or directly store data.",
+        "weight": 0.2
+      },
+      {
+        "text": "The CPU consists of two main subsections: the Arithmetic section and the Logic section.",
+        "weight": 0.2
+      }
+    ],
+    "status": "reviewed_fixed_v4"
+  },
+  {
+    "question": "Explain the Memory Unit and its types.",
+    "evaluation_type": "memory_overview",
+    "reference_answer": "The Memory Unit is used to store data, information, and instructions. It's a data storage unit where data to be processed and instructions required for processing are stored. Both input and output can be stored here. It can store instructions, data, and intermediate results and supplies information to other units when needed. It is also known as the internal storage unit, main memory, primary storage, or Random-access memory (RAM). The size of the memory unit affects the computer's speed, power, and capability.\n\nThe functions of the Memory Unit include storing all data and instructions required for processing, storing intermediate results, storing final results before they are sent to an output device, and serving as the medium through which all inputs and outputs are transmitted. It's where programs and data are stored.\n\nMemory is generally categorised into three types:\n\n1. Primary Memory:\n◦ Also known as the main memory.\n◦ Used to store data, programs, or instructions during computer operations.\n◦ Uses semiconductor technology, so it's called semiconductor memory.\n◦ It is typically a volatile memory, meaning data is lost if the power supply fails.\n◦ It is faster compared to secondary memory.\n◦ A computer system cannot run without primary memory.\n◦ Types of Primary Memory:\n▪ RAM (Random Access Memory): Volatile memory used for booting up or starting the computer. It temporarily stores programs and data to be executed by the processor.\n• SRAM (Static RAM): Uses transistors, retains state as long as power is applied, consists of flip-flops (each storing 1 bit), has less access time, and is faster.\n• DRAM (Dynamic RAM): Uses capacitors and transistors, stores data as charge on capacitors, contains thousands of memory cells, needs refreshing of charge, and is slower than SRAM.\n▪ ROM (Read Only Memory): Non-volatile memory, meaning information is retained even if the power fails. Used to store information required to operate the system. Data stored in ROM can only be read. It contains electronic fuses that can be programmed for specific information, stored in binary format. It is also known as permanent memory.\n• MROM (Masked ROM): Hard-wired devices with pre-programmed data or instructions, a low-cost type of ROM.\n• PROM (Programmable Read Only Memory): Modifiable once by the user using a PROM program; content cannot be erased after writing.\n• EPROM (Erasable Programmable Read Only Memory): Extension to PROM where content can be erased by exposing it to Ultraviolet rays for about 40 minutes.\n• EEPROM (Electrically Erasable Programmable Read Only Memory): Content can be erased electrically, can be deleted and reprogrammed up to 10,000 times, erasing and programming take very little time (4-10 ms), and any area can be selectively wiped and programmed.",
+    "concepts": [
+      {
+        "text": "The Memory Unit stores data, information, instructions, and intermediate results needed during processing.",
+        "weight": 0.1201,
+        "tier": "core"
+      },
+      {
+        "text": "Memory is generally categorised into Primary Memory and Secondary Memory (source elaborates only Primary Memory in detail).",
+        "weight": 0.12,
+        "tier": "core"
+      },
+      {
+        "text": "Primary Memory is semiconductor-based, typically volatile, faster than secondary memory, and required for the computer to run.",
+        "weight": 0.12,
+        "tier": "core"
+      },
+      {
+        "text": "RAM is volatile and temporarily stores programs and data being executed.",
+        "weight": 0.12,
+        "tier": "core"
+      },
+      {
+        "text": "ROM is non-volatile, retains information when power fails, and stores information required to operate the system.",
+        "weight": 0.12,
+        "tier": "core"
+      },
+      {
+        "text": "SRAM uses transistors/flip-flops, is faster, and has less access time.",
+        "weight": 0.1333,
+        "tier": "detail"
+      },
+      {
+        "text": "DRAM uses capacitors and transistors, needs refreshing, and is slower than SRAM.",
+        "weight": 0.1333,
+        "tier": "detail"
+      },
+      {
+        "text": "ROM types in the source include MROM, PROM, EPROM, and EEPROM.",
+        "weight": 0.1333,
+        "tier": "detail"
+      }
+    ],
+    "status": "reviewed_fixed_v4"
+  },
+  {
+    "question": "List common Input Devices and Output Devices.",
+    "evaluation_type": "list",
+    "reference_answer": "• Input Devices: Allow data and programs to be sent to the CPU. Examples include Keyboard, Mouse, Joystick, Microphone, Webcam, Scanner, and Monitor.\n• Output Devices: Media used by the computer to display responses to requests and instructions. Examples include Monitor, Printer, and Audio Speakers.",
+    "concepts": [
+      {
+        "text": "Input devices send data and programs to the CPU.",
+        "weight": 0.25
+      },
+      {
+        "text": "Examples of input devices include keyboard, mouse, joystick, microphone, webcam, scanner, and monitor.",
+        "weight": 0.25,
+        "source_note": "Source lists Monitor under both Input and Output device examples; preserved as-is rather than silently corrected."
+      },
+      {
+        "text": "Output devices present computer responses/results.",
+        "weight": 0.25
+      },
+      {
+        "text": "Examples of output devices include monitor, printer, and audio speakers.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_fixed_v4"
+  },
+  {
+    "question": "What are Secondary Storage Devices?",
+    "evaluation_type": "generic",
+    "reference_answer": "Secondary Storage Devices are attached to the computer system to allow permanent storage of programs and data for future retrieval. Examples include Floppy disk, Hard disk, CD Rom, and DVD. Optical Drives like CD-ROM (read only), CD-Writer (read/write CDs, read DVD), and DVD Writer (read/write CDs, read/write DVDs) are also mentioned.",
+    "concepts": [
+      {
+        "text": "Secondary Storage Devices are attached to the computer system to allow permanent storage of programs and data for future retrieval.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Examples include Floppy disk, Hard disk, CD Rom, and DVD.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Optical Drives like CD-ROM (read only), CD-Writer (read/write CDs, read DVD), and DVD Writer (read/write CDs, read/write DVDs) are also mentioned.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is Software?",
+    "evaluation_type": "generic",
+    "reference_answer": "Software is the non-tangible part of a computer system that tells the computer how to do its job. It is a collection of instructions, procedures, and documentation that performs different tasks on a computer system. Software is a programming code executed on a computer processor. Software and programs are interchangeable terms.",
+    "concepts": [
+      {
+        "text": "Software is the non-tangible part of a computer system that tells the computer how to do its job.",
+        "weight": 0.25
+      },
+      {
+        "text": "It is a collection of instructions, procedures, and documentation that performs different tasks on a computer system.",
+        "weight": 0.25
+      },
+      {
+        "text": "Software is a programming code executed on a computer processor.",
+        "weight": 0.25
+      },
+      {
+        "text": "Software and programs are interchangeable terms.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What are the major types of software?",
+    "evaluation_type": "list",
+    "reference_answer": "There are two major types of software:\n\n1. System Software\n2. Application Software\n\nThe source also lists Basic Units of Measurement relevant to data storage:\n\n• BIT: A unit of information equivalent to the result of a choice between 2 alternatives in the binary system.\n• BYTE: A sequence of 8 bits, enough to represent one character (letter, number, special character, symbol, or space) of alphanumeric data, processed as a single unit.",
+    "concepts": [
+      {
+        "text": "System Software is one of the two major types of software.",
+        "weight": 0.5
+      },
+      {
+        "text": "Application Software is one of the two major types of software.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_fixed"
+  },
+  {
+    "question": "Explain System Software.",
+    "evaluation_type": "explain",
+    "reference_answer": "System software directly operates the computer hardware and provides basic functionality to users and other software for smooth operation. It controls a computer's internal functioning and hardware devices like monitors, printers, and storage. It acts as an interface between hardware and user applications, helping them communicate. System software converts human-readable languages into machine language (1s or 0s) and vice versa.\n\nFeatures of System Software:\n\n• Closer to the computer system.\n• Generally written in a low-level language.\n• Difficult to design and understand.\n• Fast in speed.\n• Less interactive for users compared to application software.\n\nTypes of System Software:\n\n• Operating System: The main program of a computer system. It is the first software loaded into memory when the computer turns on. It manages resources (memory, CPU, printer, hard disk, etc.) and provides an interface for user interaction. It also provides services to other computer software. Examples: Linux, Apple macOS, Microsoft Windows.\n• Language Processor: Converts human-readable languages into machine language. It converts programs written in high-level languages (source code) into machine-readable instructions (object code or machine code).\n• Device Driver: A program or software that controls a device and helps it perform its functions. Every device (printer, mouse, modem, etc.) needs a driver to connect with the computer system. You need to install a driver when connecting a new device so the operating system knows how to control it.",
+    "concepts": [
+      {
+        "text": "System software operates computer hardware and provides basic functionality for the computer and other software.",
+        "weight": 0.125
+      },
+      {
+        "text": "System software acts as an interface between hardware and user applications.",
+        "weight": 0.125
+      },
+      {
+        "text": "System software converts between human-readable and machine-level language.",
+        "weight": 0.125
+      },
+      {
+        "text": "System software is generally closer to the computer system and is commonly written in low-level languages.",
+        "weight": 0.125
+      },
+      {
+        "text": "System software is fast and generally less interactive for users than application software.",
+        "weight": 0.125
+      },
+      {
+        "text": "Operating System is a type of system software that manages resources and provides an interface for user interaction (e.g., Linux, macOS, Windows).",
+        "weight": 0.125
+      },
+      {
+        "text": "Language Processor is a type of system software that converts human-readable code into machine-readable instructions.",
+        "weight": 0.125
+      },
+      {
+        "text": "Device Driver is a type of system software that controls a specific hardware device.",
+        "weight": 0.125
+      }
+    ],
+    "status": "reviewed_fixed_v4"
+  },
+  {
+    "question": "Explain Application Software.",
+    "evaluation_type": "explain",
+    "reference_answer": "Application software performs special functions or provides functions beyond the basic operation of the computer. It is designed to perform a specific task for end-users. It includes word processors, spreadsheets, database management, inventory, payroll programs, etc..\n\nFeatures of Application Software:\n\n• Performs specialized tasks like word processing, spreadsheets, email, etc..\n• Mostly large in size, requiring more storage space.\n• More interactive for users, making it easy to use and design.\n• Easy to design and understand.\n• Generally written in a high-level language.\n\nTypes of Application Software:\n\n• General Purpose Software: Used for a variety of tasks, not limited to one specific function. Examples: MS-Word, MS-Excel, PowerPoint.\n• Customized Software: Designed to perform specific tasks or functions, often for specific organizations. Examples: railway reservation system, airline reservation system, invoice management system.\n• Utility Software: Used to support the computer infrastructure. Designed to analyze, configure, optimize, and maintain the system. Examples: antivirus, disk fragmenter, memory tester, disk repair, disk cleaners, registry cleaners, disk space analyzer.",
+    "concepts": [
+      {
+        "text": "Application software performs specialized functions or tasks for end users.",
+        "weight": 0.1429
+      },
+      {
+        "text": "Application software includes tools such as word processors, spreadsheets, databases, inventory, and payroll programs.",
+        "weight": 0.1429
+      },
+      {
+        "text": "Application software is generally more interactive and easier for users to work with.",
+        "weight": 0.1429
+      },
+      {
+        "text": "Application software is generally written in a high-level language.",
+        "weight": 0.1429
+      },
+      {
+        "text": "General-purpose software supports a variety of tasks.",
+        "weight": 0.1429
+      },
+      {
+        "text": "Customized software is designed for specific tasks or organizations.",
+        "weight": 0.1429
+      },
+      {
+        "text": "Utility software supports, analyzes, configures, optimizes, or maintains the computer infrastructure.",
+        "weight": 0.1429
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define Hardware and Software and their differences.",
+    "evaluation_type": "comparison",
+    "reference_answer": "Hardware refers to the physical components of a computer that can be touched. These are the primary electronic devices used to build the computer. Examples include Processor, Memory Devices, Monitor, Printer, Keyboard, Mouse, and the Central Processing Unit. Software is a set of instructions, procedures, and documentation that performs tasks on a computer system. It's programming code executed on a processor. Software is intangible; it can be seen and used but not touched. Examples include Ms Word, Excel, PowerPoint, Google Chrome, Photoshop, MySQL, etc..\n\nHere are some key differences between hardware and software:\n\n| Parameters | Hardware | Software |\n|---|---|---|\n| Basic Definition | Physical part causing data processing. | Set of instructions telling the computer what to do. |\n| Development | Manufactured. | Developed and engineered. |\n| Dependency | Cannot perform tasks without software. | Cannot be executed without hardware. |\n| Process of Creating | Created using electronic and other materials. | Created using a computer language to write instructions. |\n| Tangible | Tangible (physical electronic device, can be touched). | Intangible (can see and use, but can't touch). |\n| Durability | Typically wears out over time. | Does not wear out, but may contain flaws and glitches. |\n| Types | Four main categories: input devices, output devices, storage, internal components. | Mainly divided into System software and Application software. |\n| Virus Effect | Not affected by computer viruses. | Affected by computer viruses. |\n| Transfer | Cannot be transferred electrically through a network. | Can be transferred via a network. |\n| Machine-Level Language | Only understands machine-level language. | Accepts human-readable input, interprets it into machine-level, and sends to hardware for processing. |\n| Replacement | If damaged, replaced with a new one. | If damaged, backup copy can be reinstalled. |\n| Failures | Commonly caused by dust, overheating, humidity, etc.. | Commonly caused by overloading, systematic error, version errors, etc.. |\n| Examples | Keyboard, Mouse, Monitor, Printer, CPU, Hard disk, RAM, ROM, etc.. | MS Word, Excel, PowerPoint, Photoshop, MySQL, etc..",
+    "concepts": [
+      {
+        "text": "Hardware is the physical, tangible part of a computer that can be touched.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Software is a set of instructions, procedures, and documentation executed by a processor and is intangible.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Hardware is manufactured, while software is developed/engineered using computer languages.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Hardware depends on software to perform tasks, while software depends on hardware to execute.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Hardware can wear out physically, while software does not physically wear out but can contain flaws.",
+        "weight": 0.1667
+      },
+      {
+        "text": "Hardware and software differ in their types, transferability, language level, failure causes, and replacement methods.",
+        "weight": 0.1667
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Explain Packages, Frameworks, and IDEs.",
+    "evaluation_type": "three_terms",
+    "reference_answer": "• Packages:\n◦ In software, a package is a module that can be added to any program to add additional options, features, or functionality. It can often be added using statements like \"include\" or \"import\".\n◦ In hardware, a package is a single container holding one or more items that make up the overall package, like a processor package containing all necessary parts.\n◦ Example (Software): The FileReader package is used for reading character streams, useful for obtaining user input.\n\n• Frameworks: A programming framework is a prepackaged set of solutions that solves common development problems. It's a tool or set of tools that makes common programming tasks easier. A software framework is built on top of a programming language. Examples: Rails (built on Ruby), Django and Flask (built on Python).\n\n• IDEs (Integrated Development Environments): A software application that provides a user interface for code development, testing, and debugging features. It helps organize project artifacts relevant to the source code. IDEs offer tools and features to make development easier and standardized based on the programming language. They also have functionalities to compile and interpret programs. IDEs define a visual representation of file locations, making them understandable. They contain development tools like text editors, code libraries, compilers, build automation tools, and a debugger. Examples: Eclipse for Java, Microsoft Visual Studio, Android Studio for Mobile Apps, RStudio for R, PyCharm for Python.",
+    "concepts": [
+      {
+        "text": "A software package is a module that adds functionality to a program and can be included/imported.",
+        "weight": 0.2
+      },
+      {
+        "text": "A hardware package is a container holding one or more items that form part of the hardware.",
+        "weight": 0.2
+      },
+      {
+        "text": "A framework is a prepackaged set of solutions/tools for common programming problems, built on a programming language.",
+        "weight": 0.2
+      },
+      {
+        "text": "An IDE is an application providing tools for code development, testing, debugging, compilation/interpreting, and project organization.",
+        "weight": 0.2
+      },
+      {
+        "text": "Examples in the source include Rails, Django, Flask, Eclipse, Visual Studio, Android Studio, RStudio, and PyCharm.",
+        "weight": 0.2
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define a computer drawing on different descriptions provided in the source.",
+    "evaluation_type": "generic",
+    "reference_answer": "A computer is normally considered to be a calculation device which can perform arithmetic operations very speedily. It may also be defined as a device which operates upon the data, or as an electronic device which takes input from the user, processes it and gives the output as per user’s requirement.",
+    "concepts": [
+      {
+        "text": "A computer is normally considered to be a calculation device which can perform arithmetic operations very speedily.",
+        "weight": 0.5
+      },
+      {
+        "text": "It may also be defined as a device which operates upon the data, or as an electronic device which takes input from the user, processes it and gives the output as per user’s requirement.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is the origin of the word \"computer\"?",
+    "evaluation_type": "generic",
+    "reference_answer": "The word “computer” comes from the word “TO COMPUTE,” meaning to calculate.",
+    "concepts": [
+      {
+        "text": "The word “computer” comes from the word “TO COMPUTE,” meaning to calculate.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "How is a computer also known based on its primary function with data?",
+    "evaluation_type": "generic",
+    "reference_answer": "The fact that computers process data is so fundamental that many people have started calling them a “Data Processor”.",
+    "concepts": [
+      {
+        "text": "The fact that computers process data is so fundamental that many people have started calling them a “Data Processor”.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "List the three main tasks performed by a computer.",
+    "evaluation_type": "list",
+    "reference_answer": "The main tasks performed by the computer are Input, Process, and Output.",
+    "concepts": [
+      {
+        "text": "Input: the computer accepts data from the user.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Process: the computer processes the data it receives.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Output: the computer provides output based on the processing.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_fixed"
+  },
+  {
+    "question": "Explain the characteristic of a computer being 'Automatic'.",
+    "evaluation_type": "concept",
+    "reference_answer": "Computers are automatic machines because they work by themselves without human intervention once they are started on a job until the job is finished. They work from instructions stored inside the system in the form of programs which specify how a particular job is to be done.",
+    "concepts": [
+      {
+        "text": "A computer is automatic because it can work by itself without continuous human intervention once a job is started.",
+        "weight": 0.5
+      },
+      {
+        "text": "The computer follows instructions stored in programs that specify how the job should be performed.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Describe the 'Accuracy' characteristic and how errors can occur in computer operations.",
+    "evaluation_type": "concept",
+    "reference_answer": "The accuracy of a computer is very high, and the degree of accuracy depends upon its design. Errors can occur, but these are typically due to human weakness or incorrect data, not due to technological weakness.",
+    "concepts": [
+      {
+        "text": "Computers have very high accuracy.",
+        "weight": 0.5
+      },
+      {
+        "text": "Computer errors are generally caused by human weakness or incorrect data rather than technological weakness.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is the 'Speed' characteristic of a computer, and how is its speed typically measured?",
+    "evaluation_type": "concept",
+    "reference_answer": "A computer is a very fast device that can perform an amount of work in few seconds for which a human could take an entire year. When talking about computer speed, measurements are not in terms of seconds and milliseconds, but in microseconds. A powerful computer is capable of performing several billion (10^9) simple arithmetic operations per second.",
+    "concepts": [
+      {
+        "text": "A computer can perform a large amount of work very quickly.",
+        "weight": 0.5
+      },
+      {
+        "text": "Computer speed is described using microseconds and, for powerful computers, billions of simple arithmetic operations per second.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define the 'Diligence' characteristic of a computer.",
+    "evaluation_type": "generic",
+    "reference_answer": "Unlike human beings, a computer is free from monotony, tiredness, and lack of concentration. It can continuously work for hours without creating any error and with exactly the same accuracy and speed for subsequent calculations as the first one.",
+    "concepts": [
+      {
+        "text": "Unlike human beings, a computer is free from monotony, tiredness, and lack of concentration.",
+        "weight": 0.5
+      },
+      {
+        "text": "It can continuously work for hours without creating any error and with exactly the same accuracy and speed for subsequent calculations as the first one.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Explain the 'Versatility' characteristic of a computer with an example from the source.",
+    "evaluation_type": "concept",
+    "reference_answer": "Versatility is a wonderful feature where a computer can perform different tasks. For example, one moment it is preparing examination results, the next it is busy preparing electricity bills, and in between, it may be helping an office secretary trace an important letter in seconds.",
+    "concepts": [
+      {
+        "text": "Versatility means a computer can perform different kinds of tasks.",
+        "weight": 0.5
+      },
+      {
+        "text": "Examples include preparing examination results, electricity bills, and finding office records.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is the 'Power of remembering' characteristic referring to?",
+    "evaluation_type": "concept",
+    "reference_answer": "Because of the high storage capacity of its storage devices, a computer can store and recall any amount of data. Every piece of information can be retained as long as desired by the user and can be recalled when required.",
+    "concepts": [
+      {
+        "text": "A computer can store and recall large amounts of data because of its storage capacity.",
+        "weight": 0.5
+      },
+      {
+        "text": "Stored information can be retained and recalled when required.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Describe the 'No I.Q.' characteristic of a computer.",
+    "evaluation_type": "generic",
+    "reference_answer": "A computer possesses no intelligence of its own; its I.Q. is zero. It has to be told what to do and in what sequence, and it cannot take its own decisions.",
+    "concepts": [
+      {
+        "text": "A computer possesses no intelligence of its own; its I.Q.",
+        "weight": 0.5
+      },
+      {
+        "text": "It has to be told what to do and in what sequence, and it cannot take its own decisions.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is an Information Processing System?",
+    "evaluation_type": "concept",
+    "reference_answer": "A Computer is an electronic machine that follows a set of instructions in order that it may be able to accept and gather data and transform these into information.",
+    "concepts": [
+      {
+        "text": "An Information Processing System is a computer that follows instructions to accept and gather data and transform it into information.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "List the four functions of an Information Processing System.",
+    "evaluation_type": "list",
+    "reference_answer": "The functions are: It accepts and gathers data (INPUT), It processes data to become information (PROCESSING), It stores data and information (STORE), It presents information (OUTPUT).",
+    "concepts": [
+      {
+        "text": "INPUT: accepts and gathers data.",
+        "weight": 0.25
+      },
+      {
+        "text": "PROCESSING: processes data into information.",
+        "weight": 0.25
+      },
+      {
+        "text": "STORE: stores data and information.",
+        "weight": 0.25
+      },
+      {
+        "text": "OUTPUT: presents information.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "In the context of computers, what does the term \"Generation\" signify?",
+    "evaluation_type": "generic",
+    "reference_answer": "In Computer language, “Generation” is a set of Technology.",
+    "concepts": [
+      {
+        "text": "In Computer language, “Generation” is a set of Technology.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Identify the technology used in the First Generation of computers.",
+    "evaluation_type": "generic",
+    "reference_answer": "The technology used in the First Generation was the vacuum tube.",
+    "concepts": [
+      {
+        "text": "The technology used in the First Generation was the vacuum tube.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Name two examples of First Generation computers from the source.",
+    "evaluation_type": "list",
+    "reference_answer": "ENIAC, EDVAC, and EDSAC are examples of 1st generation computers.",
+    "concepts": [
+      {
+        "text": "ENIAC is an example of a First Generation computer.",
+        "weight": 0.3333
+      },
+      {
+        "text": "EDVAC is an example of a First Generation computer.",
+        "weight": 0.3333
+      },
+      {
+        "text": "EDSAC is an example of a First Generation computer.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_fixed_v4",
+    "select_any": {
+      "required": 2,
+      "of": 3,
+      "note": "Question asks for 2 examples; source names 3 (ENIAC, EDVAC, EDSAC). Grader should award full credit for any 2 correctly named, not require all 3."
+    }
+  },
+  {
+    "question": "What was the primary technology used in the Second Generation of computers, and how did it improve upon the first generation in terms of size and heat?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "The primary technology was the transistor. Second Generation systems were 10 times smaller in size and generated less heat than 1st generation computers.",
+    "concepts": [
+      {
+        "text": "Second Generation used transistors.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Second Generation systems were about 10 times smaller than First Generation systems.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Second Generation systems generated less heat and consumed less power than First Generation systems.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What core technology defines the Third Generation of computers?",
+    "evaluation_type": "generic",
+    "reference_answer": "The core technology is the IC chip.",
+    "concepts": [
+      {
+        "text": "The core technology is the IC chip.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What technology is the Fourth Generation of computers based upon?",
+    "evaluation_type": "generic",
+    "reference_answer": "The Fourth Generation is based on LSI & VLSI microprocessor chips.",
+    "concepts": [
+      {
+        "text": "The Fourth Generation is based on LSI & VLSI microprocessor chips.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What significant possibility arose with the Fourth Generation concerning connectivity?",
+    "evaluation_type": "generic",
+    "reference_answer": "It became possible to use the network concept to connect computers together.",
+    "concepts": [
+      {
+        "text": "It became possible to use the network concept to connect computers together.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What technology defines the Fifth Generation of computers and what kind of user interface features are characteristic?",
+    "evaluation_type": "generic",
+    "reference_answer": "The technology is the ULSI microprocessor chip. They have a more user-friendly interface with multimedia features.",
+    "concepts": [
+      {
+        "text": "The technology is the ULSI microprocessor chip.",
+        "weight": 0.5
+      },
+      {
+        "text": "They have a more user-friendly interface with multimedia features.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "List the basic hardware components of a PC system.",
+    "evaluation_type": "list",
+    "reference_answer": "The basic hardware components are Central Processing Unit (CPU), Memory Unit, Input Devices, Output Devices, and Secondary Storage Devices.",
+    "concepts": [
+      {
+        "text": "Central Processing Unit (CPU) is a basic hardware component of a PC system.",
+        "weight": 0.2
+      },
+      {
+        "text": "Memory Unit is a basic hardware component of a PC system.",
+        "weight": 0.2
+      },
+      {
+        "text": "Input Devices are a basic hardware component of a PC system.",
+        "weight": 0.2
+      },
+      {
+        "text": "Output Devices are a basic hardware component of a PC system.",
+        "weight": 0.2
+      },
+      {
+        "text": "Secondary Storage Devices are a basic hardware component of a PC system.",
+        "weight": 0.2
+      }
+    ],
+    "status": "reviewed_fixed"
+  },
+  {
+    "question": "Define Computer Hardware.",
+    "evaluation_type": "generic",
+    "reference_answer": "Hardware refers to the physical components of a computer. Computer Hardware is any part of the computer that we can touch. These are the primary electronic devices used to build up the computer.",
+    "concepts": [
+      {
+        "text": "Hardware refers to the physical components of a computer.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Computer Hardware is any part of the computer that we can touch.",
+        "weight": 0.3333
+      },
+      {
+        "text": "These are the primary electronic devices used to build up the computer.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is the main role or description of the Central Processing Unit (CPU)?",
+    "evaluation_type": "generic",
+    "reference_answer": "The Central Processing Unit (CPU) is the brain of the computer. It directs and controls the entire computer system and performs all arithmetic and logical operations.",
+    "concepts": [
+      {
+        "text": "The CPU is the brain of the computer.",
+        "weight": 0.34
+      },
+      {
+        "text": "The CPU directs and controls the entire computer system.",
+        "weight": 0.33
+      },
+      {
+        "text": "The CPU performs all arithmetic and logical operations.",
+        "weight": 0.33
+      }
+    ],
+    "status": "reviewed_fixed_v5_atomic"
+  },
+  {
+    "question": "According to the source, what are the key functions of the CPU regarding data and instructions?",
+    "evaluation_type": "list",
+    "reference_answer": "It is responsible for controlling the transfer of data and instructions among other units. It obtains instructions from memory, interprets them, and directs operations. It communicates with Input/Output devices for data or result transfer.",
+    "concepts": [
+      {
+        "text": "The CPU controls the transfer of data and instructions among other units.",
+        "weight": 0.25
+      },
+      {
+        "text": "The CPU obtains and interprets instructions from memory.",
+        "weight": 0.25
+      },
+      {
+        "text": "The CPU directs operations.",
+        "weight": 0.25
+      },
+      {
+        "text": "The CPU communicates with Input/Output devices for data or result transfer.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_fixed_v5_atomic"
+  },
+  {
+    "question": "What does the CPU not do regarding actual data processing?",
+    "evaluation_type": "generic",
+    "reference_answer": "The CPU directs and controls the entire computer system and performs operations, but the CPU unit controls the operations of all parts of the computer and does not carry out any actual data processing operations itself.",
+    "concepts": [
+      {
+        "text": "The CPU directs and controls the entire computer system and performs operations, but the CPU unit controls the operations of all parts of the computer and does not carry out any actual data processing operations itself.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Identify the two subsections of the ALU and their respective functions.",
+    "evaluation_type": "multi_part",
+    "reference_answer": "The two subsections are the Arithmetic section and the Logic Section. The Arithmetic section performs arithmetic operations like addition, subtraction, multiplication, and division. The Logic section performs logic operations such as comparing, selecting, matching, and merging of data.",
+    "concepts": [
+      {
+        "text": "The ALU has an Arithmetic section and a Logic section.",
+        "weight": 0.3333
+      },
+      {
+        "text": "The Arithmetic section performs addition, subtraction, multiplication, and division.",
+        "weight": 0.3333
+      },
+      {
+        "text": "The Logic section performs comparison, selection, matching, and merging operations.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is the purpose of the Memory Unit?",
+    "evaluation_type": "generic",
+    "reference_answer": "The Memory Unit can store instructions, data, and intermediate results. It supplies information to the other units of the computer when needed.",
+    "concepts": [
+      {
+        "text": "The Memory Unit can store instructions, data, and intermediate results.",
+        "weight": 0.5
+      },
+      {
+        "text": "It supplies information to the other units of the computer when needed.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What are the main functions of the main memory (primary storage)?",
+    "evaluation_type": "list",
+    "reference_answer": "It stores all the data and instructions required for processing. It stores intermediate results of processing. It stores final results of processing before being released to an output device. All inputs and outputs are transmitted through main memory.",
+    "concepts": [
+      {
+        "text": "Main memory stores all data and instructions required for processing.",
+        "weight": 0.25
+      },
+      {
+        "text": "Main memory stores intermediate processing results.",
+        "weight": 0.25
+      },
+      {
+        "text": "Main memory stores final results before they are sent to an output device.",
+        "weight": 0.25
+      },
+      {
+        "text": "Inputs and outputs are transmitted through main memory.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Name the two types of memories primarily classified in the source.",
+    "evaluation_type": "list",
+    "reference_answer": "Primary memory and secondary memory are two types of memories in the computer.",
+    "concepts": [
+      {
+        "text": "Primary memory is one of the two types of memory in the computer.",
+        "weight": 0.5
+      },
+      {
+        "text": "Secondary memory is one of the two types of memory in the computer.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_fixed"
+  },
+  {
+    "question": "What are the characteristics of Main Memory?",
+    "evaluation_type": "list",
+    "reference_answer": "It is faster compared to secondary memory, is a semiconductor memory, is usually volatile, is the main memory, and a computer system cannot run without primary memory.",
+    "concepts": [
+      {
+        "text": "Main Memory is faster than secondary memory.",
+        "weight": 0.25
+      },
+      {
+        "text": "Main Memory uses semiconductor technology.",
+        "weight": 0.25
+      },
+      {
+        "text": "Main Memory is usually volatile.",
+        "weight": 0.25
+      },
+      {
+        "text": "A computer system cannot run without primary memory.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is Primary Memory also called?",
+    "evaluation_type": "generic",
+    "reference_answer": "Primary Memory is also known as the main memory of the computer system.",
+    "concepts": [
+      {
+        "text": "Primary Memory is also known as the main memory of the computer system.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define RAM (Random Access Memory) and explain its nature (volatile/non-volatile).",
+    "evaluation_type": "multi_part",
+    "reference_answer": "RAM (Random Access Memory) is a volatile memory. Volatile memory stores information based on the power supply; if the power supply fails, all data and information on this memory will be lost.",
+    "concepts": [
+      {
+        "text": "RAM stands for Random Access Memory.",
+        "weight": 0.34
+      },
+      {
+        "text": "RAM is volatile memory.",
+        "weight": 0.33
+      },
+      {
+        "text": "Volatile memory depends on the power supply and loses stored data when power fails.",
+        "weight": 0.33
+      }
+    ],
+    "status": "reviewed_fixed_v5_atomic"
+  },
+  {
+    "question": "Explain the difference between SRAM and DRAM based on their technology and speed.",
+    "evaluation_type": "comparison",
+    "reference_answer": "SRAM (Static RAM) uses transistors and is faster with less access time. DRAM (Dynamic RAM) uses capacitors and transistors, stores data as a charge on capacitors, needs refreshing, and is slower than SRAM.",
+    "concepts": [
+      {
+        "text": "SRAM uses transistors and is faster with less access time.",
+        "weight": 0.3333
+      },
+      {
+        "text": "DRAM uses capacitors and transistors and stores data as charge on capacitors.",
+        "weight": 0.3333
+      },
+      {
+        "text": "DRAM needs refreshing and is slower than SRAM.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define ROM (Read Only Memory) and state its nature. What is it used for?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "ROM (Read Only Memory) is a non-volatile memory, storing information even when power supply fails. It is used to store information that operates the system.",
+    "concepts": [
+      {
+        "text": "ROM stands for Read Only Memory.",
+        "weight": 0.34
+      },
+      {
+        "text": "ROM is non-volatile memory, meaning it retains information even when the power supply fails.",
+        "weight": 0.33
+      },
+      {
+        "text": "ROM is used to store information required to operate the system.",
+        "weight": 0.33
+      }
+    ],
+    "status": "reviewed_fixed_v5_atomic"
+  },
+  {
+    "question": "Name the four types of ROM described.",
+    "evaluation_type": "list",
+    "reference_answer": "The four types are MROM (Masked ROM), PROM (Programmable Read Only Memory), EPROM (Erasable Programmable Read Only Memory), and EEPROM (Electrically Erasable Programmable Read Only Memory).",
+    "concepts": [
+      {
+        "text": "MROM (Masked ROM)",
+        "weight": 0.25
+      },
+      {
+        "text": "PROM (Programmable Read Only Memory)",
+        "weight": 0.25
+      },
+      {
+        "text": "EPROM (Erasable Programmable Read Only Memory)",
+        "weight": 0.25
+      },
+      {
+        "text": "EEPROM (Electrically Erasable Programmable Read Only Memory)",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "How is MROM (Masked ROM) programmed?",
+    "evaluation_type": "concept",
+    "reference_answer": "Masked ROMs were hard-wired devices with a pre-programmed collection of data or instructions.",
+    "concepts": [
+      {
+        "text": "MROM is hard-wired with pre-programmed data or instructions.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "How is PROM (Programmable Read Only Memory) programmed by the user, and can its content be erased?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "A PROM is modifiable once by the user who purchases a blank PROM and uses a PROM program to put required contents into it. Its content cannot be erased once written.",
+    "concepts": [
+      {
+        "text": "PROM can be programmed once by the user.",
+        "weight": 0.5
+      },
+      {
+        "text": "PROM contents cannot be erased after writing.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "How is EPROM erased?",
+    "evaluation_type": "concept",
+    "reference_answer": "The content of EPROM can be erased by exposing it to Ultraviolet rays.",
+    "concepts": [
+      {
+        "text": "EPROM contents can be erased by exposure to ultraviolet rays.",
+        "weight": 1.0
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "How is EEPROM erased and reprogrammed?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "In EEPROM, the written contents can be erased electrically. Any area can be wiped and programmed selectively, and it can be deleted and reprogrammed multiple times (e.g., up to 10,000 times).",
+    "concepts": [
+      {
+        "text": "EEPROM contents can be erased electrically.",
+        "weight": 0.3333
+      },
+      {
+        "text": "EEPROM can be selectively wiped and programmed.",
+        "weight": 0.3333
+      },
+      {
+        "text": "EEPROM can be deleted and reprogrammed multiple times.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define Secondary Memory and explain why it is called auxiliary or backup memory.",
+    "evaluation_type": "multi_part",
+    "reference_answer": "Secondary Memory is also known as auxiliary memory and backup memory. It is used to store a large amount of data or information permanently.",
+    "concepts": [
+      {
+        "text": "Secondary Memory is also called auxiliary memory and backup memory.",
+        "weight": 0.5
+      },
+      {
+        "text": "Secondary Memory is used to store large amounts of data or information permanently.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What are the characteristics of Secondary Memory?",
+    "evaluation_type": "list",
+    "reference_answer": "It is slow but reusable, reliable, non-volatile, cheaper than primary memory, has a large storage capacity, and data is stored permanently even when the power is off.",
+    "concepts": [
+      {
+        "text": "Secondary Memory is slower but reusable.",
+        "weight": 0.25
+      },
+      {
+        "text": "Secondary Memory is reliable and non-volatile.",
+        "weight": 0.25
+      },
+      {
+        "text": "Secondary Memory is cheaper than primary memory.",
+        "weight": 0.25
+      },
+      {
+        "text": "Secondary Memory has large storage capacity and retains data when power is off.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Explain how the CPU accesses data stored in Secondary Memory.",
+    "evaluation_type": "process",
+    "reference_answer": "A CPU cannot access secondary memory directly. Data or information from auxiliary memory is first transferred to the main memory, and then the CPU can access it.",
+    "concepts": [
+      {
+        "text": "The CPU cannot access secondary memory directly.",
+        "weight": 0.5
+      },
+      {
+        "text": "Data from secondary/auxiliary memory is first transferred to main memory, then the CPU accesses it.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "List the three main types of Secondary Memory.",
+    "evaluation_type": "list",
+    "reference_answer": "The types of secondary memory listed are Magnetic Tapes, Magnetic Disks, and Optical Disks.",
+    "concepts": [
+      {
+        "text": "Magnetic Tapes",
+        "weight": 0.3333
+      },
+      {
+        "text": "Magnetic Disks",
+        "weight": 0.3333
+      },
+      {
+        "text": "Optical Disks",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Briefly describe the structure of Magnetic Disks.",
+    "evaluation_type": "structure",
+    "reference_answer": "A magnetic disk is a circular metal or plastic plate coated with magnetic material, used on both sides. Bits are stored in magnetized surfaces in locations called tracks that run in concentric rings, and tracks are typically broken into pieces called sectors.",
+    "concepts": [
+      {
+        "text": "A magnetic disk is a circular metal or plastic plate coated with magnetic material.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Bits are stored on magnetized surfaces in concentric tracks.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Tracks are divided into sectors.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What is an Optical Disk? Name the three types mentioned.",
+    "evaluation_type": "multi_part",
+    "reference_answer": "An Optical Disk is a laser-based storage medium that can be written to and read. The types mentioned are CD-ROM, WORM, and DVDs.",
+    "concepts": [
+      {
+        "text": "An optical disk is a laser-based storage medium that can be written to and read.",
+        "weight": 0.25
+      },
+      {
+        "text": "CD-ROM is one of the three types of optical disk mentioned.",
+        "weight": 0.25
+      },
+      {
+        "text": "WORM is one of the three types of optical disk mentioned.",
+        "weight": 0.25
+      },
+      {
+        "text": "DVD is one of the three types of optical disk mentioned.",
+        "weight": 0.25
+      }
+    ],
+    "status": "reviewed_fixed_v4"
+  },
+  {
+    "question": "What does WORM stand for, and what is its key characteristic regarding writing and reading data?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "WORM stands for WRITE ONCE READ MANY. A user can only write data once, but it is possible to read the written data as many times as desired.",
+    "concepts": [
+      {
+        "text": "WORM stands for Write Once Read Many.",
+        "weight": 0.5
+      },
+      {
+        "text": "Data can be written only once but can be read many times.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What does DVD stand for, and how does its storage capacity generally compare to CD-ROMs?",
+    "evaluation_type": "multi_part",
+    "reference_answer": "DVD stands for “Digital Versatile/Video Disc”. When compared to CD-ROMs, DVDs can store a lot more data.",
+    "concepts": [
+      {
+        "text": "DVD stands for Digital Versatile/Video Disc.",
+        "weight": 0.5
+      },
+      {
+        "text": "DVDs can store much more data than CD-ROMs.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "Define Cache Memory and its location in the computer system.",
+    "evaluation_type": "multi_part",
+    "reference_answer": "Cache Memory is a type of high-speed semiconductor memory. It serves as a buffer between the CPU and the main memory.",
+    "concepts": [
+      {
+        "text": "Cache memory is a high-speed semiconductor memory.",
+        "weight": 0.5
+      },
+      {
+        "text": "Cache memory acts as a buffer between the CPU and main memory.",
+        "weight": 0.5
+      }
+    ],
+    "status": "reviewed_candidate"
+  },
+  {
+    "question": "What are two advantages and one disadvantage of Cache Memory?",
+    "evaluation_type": "list",
+    "reference_answer": "Advantages include being faster than main memory and taking less time to access. A disadvantage is that it is very expensive because of the semiconductors used.",
+    "concepts": [
+      {
+        "text": "Cache memory is faster than main memory.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Cache memory takes less time to access.",
+        "weight": 0.3333
+      },
+      {
+        "text": "Cache memory is expensive because of the semiconductors used.",
+        "weight": 0.3333
+      }
+    ],
+    "status": "reviewed_candidate"
+  }
+]

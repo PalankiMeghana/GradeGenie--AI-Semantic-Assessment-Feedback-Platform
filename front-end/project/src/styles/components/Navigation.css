@@ -1,0 +1,123 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: var(--space-2) 0;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.navbar-logo:hover {
+  color: var(--accent);
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin-left: var(--space-3);
+}
+
+.navbar-links a {
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: var(--space-1) 0;
+  position: relative;
+}
+
+.navbar-links a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--accent);
+}
+
+.navbar-links a:hover:after,
+.navbar-links a.active:after {
+  width: 100%;
+}
+
+.navbar-links a.active {
+  color: var(--accent);
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.auth-container {
+  margin-left: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+  
+  .navbar-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    padding: var(--space-2);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .navbar-links li {
+    margin: var(--space-1) 0;
+    text-align: center;
+  }
+
+  .auth-container {
+    margin: var(--space-2) 0;
+  }
+}
