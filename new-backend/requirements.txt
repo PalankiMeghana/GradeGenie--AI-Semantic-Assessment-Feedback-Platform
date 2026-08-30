@@ -5,3 +5,4 @@ sentence-transformers
 Pillow
 pytesseract
 pdf2image
+gunicorn
