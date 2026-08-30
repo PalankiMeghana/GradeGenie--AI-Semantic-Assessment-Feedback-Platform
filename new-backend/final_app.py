@@ -182,15 +182,35 @@ RUBRIC_PATH = BASE_DIR / "rubrics_v5.json"
 # Model + reference rubric
 # ---------------------------------------------------------------------
 
-print(f"Loading embedding model: {MODEL_NAME}")
-SENT_MODEL = SentenceTransformer(MODEL_NAME, device="cpu")
-
-print(f"Loading NLI model: {NLI_MODEL_NAME}")
-NLI_MODEL = CrossEncoder(NLI_MODEL_NAME, device="cpu")
+SENT_MODEL = None
+NLI_MODEL = None
 
 RUBRICS = []
 RUBRIC_QUESTION_EMBEDDINGS = None
+def get_sentence_model():
+    global SENT_MODEL
 
+    if SENT_MODEL is None:
+        print(f"Loading embedding model: {MODEL_NAME}")
+        SENT_MODEL = SentenceTransformer(
+            MODEL_NAME,
+            device="cpu"
+        )
+
+    return SENT_MODEL
+
+
+def get_nli_model():
+    global NLI_MODEL
+
+    if NLI_MODEL is None:
+        print(f"Loading NLI model: {NLI_MODEL_NAME}")
+        NLI_MODEL = CrossEncoder(
+            NLI_MODEL_NAME,
+            device="cpu"
+        )
+
+    return NLI_MODEL
 
 def load_rubrics():
     """Load the reviewed v4 rubric file."""
@@ -270,7 +290,9 @@ def build_rubric_index():
 
     questions = [item["question"] for item in RUBRICS]
 
-    RUBRIC_QUESTION_EMBEDDINGS = SENT_MODEL.encode(
+    model = get_sentence_model()
+
+    RUBRIC_QUESTION_EMBEDDINGS = model.encode(
         questions,
         convert_to_numpy=True,
         normalize_embeddings=True,
@@ -282,8 +304,12 @@ def build_rubric_index():
         f"from {RUBRIC_PATH}"
     )
 
+def ensure_rubric_index():
+    global RUBRICS, RUBRIC_QUESTION_EMBEDDINGS
 
-build_rubric_index()
+    if not RUBRICS or RUBRIC_QUESTION_EMBEDDINGS is None:
+        build_rubric_index()
+
 
 # ---------------------------------------------------------------------
 # Text helpers
@@ -590,7 +616,11 @@ def find_reference_question(question):
     if not question:
         return None
 
-    query_embedding = SENT_MODEL.encode(
+    ensure_rubric_index()
+
+    model = get_sentence_model()
+
+    query_embedding = model.encode(
         question,
         convert_to_numpy=True,
         normalize_embeddings=True,
@@ -617,13 +647,12 @@ def find_reference_question(question):
 
 def run_nli(reference_concept, student_sentence):
     """
-    Verify whether the student's sentence supports or contradicts a
-    reference concept. Unchanged from v7/v8.
-
-        premise    = reference concept
-        hypothesis = student statement
+    Verify whether the student's sentence supports or contradicts
+    a reference concept.
     """
-    scores = NLI_MODEL.predict(
+    model = get_nli_model()
+
+    scores = model.predict(
         [(reference_concept, student_sentence)],
         apply_softmax=True,
         show_progress_bar=False,
@@ -631,8 +660,6 @@ def run_nli(reference_concept, student_sentence):
 
     probabilities = np.asarray(scores[0])
 
-    # cross-encoder/nli-MiniLM2-L6-H768 label order:
-    # contradiction, entailment, neutral.
     contradiction_prob = float(probabilities[0])
     entailment_prob = float(probabilities[1])
     neutral_prob = float(probabilities[2])
@@ -651,23 +678,12 @@ def run_nli(reference_concept, student_sentence):
         "neutral": round(neutral_prob, 4),
     }
 
-
 def evaluate_concepts(student_text, rubric):
     """
     Evaluate the student's answer against the reviewed rubric.
-
-    Decision order per concept (v9):
-      1. Below NLI trigger similarity -> missing (below_trigger)
-      2. Strong NLI contradiction -> contradicted (ALWAYS checked
-         first among the NLI-gated branches - unchanged priority from
-         v7/v8, so this cannot be bypassed by the new lexical door)
-      3. High-confidence similarity -> covered (high_similarity)
-      4. Hard NLI entailment -> covered (nli_entailment)
-      5. NEW: lexical-assist door -> covered (lexical_assist) only if
-         BOTH domain-synonym overlap >= LEXICAL_ASSIST_THRESHOLD AND
-         NLI leans toward entailment over neutral
-      6. Otherwise -> missing
     """
+    model = get_sentence_model()
+
     candidates = generate_match_candidates(student_text)
     concepts = rubric["concepts"]
 
@@ -682,7 +698,7 @@ def evaluate_concepts(student_text, rubric):
     candidate_texts = [c["text"] for c in candidates]
     candidate_types = [c["type"] for c in candidates]
 
-    candidate_embeddings = SENT_MODEL.encode(
+    candidate_embeddings = model.encode(
         candidate_texts,
         convert_to_numpy=True,
         normalize_embeddings=True,
@@ -693,7 +709,7 @@ def evaluate_concepts(student_text, rubric):
 
     concept_texts = [c["text"] for c in concepts]
 
-    concept_embeddings = SENT_MODEL.encode(
+    concept_embeddings = model.encode(
         concept_texts,
         convert_to_numpy=True,
         normalize_embeddings=True,
