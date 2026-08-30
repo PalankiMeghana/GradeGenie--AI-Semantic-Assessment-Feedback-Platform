@@ -175,11 +175,9 @@ NEAR_DUPLICATE_OVERLAP = 0.6
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
 
-DATA_PATH = Path(r"D:\Projects\GradeGenie\training_data.jsonl")
-# Updated to point at rubrics_v5.json (atomic-concept fixes for RAM, ROM,
-# and the CPU/Data-vs-Information concepts identified during this pass).
-# Adjust the folder if your local layout differs.
-RUBRIC_PATH = Path(r"D:\Projects\GradeGenie\new-backend\rubrics_v5.json")
+DATA_PATH = PROJECT_ROOT / "training_data.jsonl"
+
+RUBRIC_PATH = BASE_DIR / "rubrics_v5.json"
 # ---------------------------------------------------------------------
 # Model + reference rubric
 # ---------------------------------------------------------------------
