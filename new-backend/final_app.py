@@ -183,10 +183,10 @@ RUBRIC_PATH = BASE_DIR / "rubrics_v5.json"
 # ---------------------------------------------------------------------
 
 print(f"Loading embedding model: {MODEL_NAME}")
-SENT_MODEL = SentenceTransformer(MODEL_NAME)
+SENT_MODEL = SentenceTransformer(MODEL_NAME, device="cpu")
 
 print(f"Loading NLI model: {NLI_MODEL_NAME}")
-NLI_MODEL = CrossEncoder(NLI_MODEL_NAME)
+NLI_MODEL = CrossEncoder(NLI_MODEL_NAME, device="cpu")
 
 RUBRICS = []
 RUBRIC_QUESTION_EMBEDDINGS = None
