@@ -432,7 +432,7 @@ GradeGenie/
 │       └── ...
 │
 ├── new-backend/
-│   ├── final-app.py
+│   ├── final_app.py
 │   ├── requirements.txt
 │   └── rubrics_v5.json
 │
@@ -510,7 +510,7 @@ pip install -r requirements.txt
 Start the Flask backend:
 
 ```bash
-python final-app.py
+python final_app.py
 ```
 
 The backend should run at:
