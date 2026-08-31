@@ -115,11 +115,7 @@ except Exception as exc:
 
 app = Flask(__name__)
 
-CORS(
-    app,
-    origins=["http://localhost:5173", "http://localhost:5174"],
-    supports_credentials=True,
-)
+CORS(app)
 
 DEFAULT_SUBJECTS = [
     "Computer Fundamentals",
@@ -182,39 +178,14 @@ RUBRIC_PATH = BASE_DIR / "rubrics_v5.json"
 # Model + reference rubric
 # ---------------------------------------------------------------------
 
-# Models are loaded lazily so Gunicorn can start without immediately
-# consuming the Render instance's limited memory.
-SENT_MODEL = None
-NLI_MODEL = None
+print(f"Loading embedding model: {MODEL_NAME}")
+SENT_MODEL = SentenceTransformer(MODEL_NAME)
+
+print(f"Loading NLI model: {NLI_MODEL_NAME}")
+NLI_MODEL = CrossEncoder(NLI_MODEL_NAME)
 
 RUBRICS = []
 RUBRIC_QUESTION_EMBEDDINGS = None
-
-
-def get_sentence_model():
-    global SENT_MODEL
-
-    if SENT_MODEL is None:
-        print(f"Loading embedding model: {MODEL_NAME}")
-        SENT_MODEL = SentenceTransformer(
-            MODEL_NAME,
-            device="cpu",
-        )
-
-    return SENT_MODEL
-
-
-def get_nli_model():
-    global NLI_MODEL
-
-    if NLI_MODEL is None:
-        print(f"Loading NLI model: {NLI_MODEL_NAME}")
-        NLI_MODEL = CrossEncoder(
-            NLI_MODEL_NAME,
-            device="cpu",
-        )
-
-    return NLI_MODEL
 
 
 def load_rubrics():
@@ -295,11 +266,8 @@ def build_rubric_index():
 
     questions = [item["question"] for item in RUBRICS]
 
-    model = get_sentence_model()
-
-    RUBRIC_QUESTION_EMBEDDINGS = model.encode(
+    RUBRIC_QUESTION_EMBEDDINGS = SENT_MODEL.encode(
         questions,
-        batch_size=8,
         convert_to_numpy=True,
         normalize_embeddings=True,
         show_progress_bar=False,
@@ -311,12 +279,7 @@ def build_rubric_index():
     )
 
 
-def ensure_rubric_index():
-    global RUBRICS, RUBRIC_QUESTION_EMBEDDINGS
-
-    if not RUBRICS or RUBRIC_QUESTION_EMBEDDINGS is None:
-        build_rubric_index()
-
+build_rubric_index()
 
 # ---------------------------------------------------------------------
 # Text helpers
@@ -623,13 +586,8 @@ def find_reference_question(question):
     if not question:
         return None
 
-    ensure_rubric_index()
-
-    model = get_sentence_model()
-
-    query_embedding = model.encode(
+    query_embedding = SENT_MODEL.encode(
         question,
-        batch_size=8,
         convert_to_numpy=True,
         normalize_embeddings=True,
         show_progress_bar=False,
@@ -661,9 +619,7 @@ def run_nli(reference_concept, student_sentence):
         premise    = reference concept
         hypothesis = student statement
     """
-    model = get_nli_model()
-
-    scores = model.predict(
+    scores = NLI_MODEL.predict(
         [(reference_concept, student_sentence)],
         apply_softmax=True,
         show_progress_bar=False,
@@ -708,8 +664,6 @@ def evaluate_concepts(student_text, rubric):
          NLI leans toward entailment over neutral
       6. Otherwise -> missing
     """
-    model = get_sentence_model()
-
     candidates = generate_match_candidates(student_text)
     concepts = rubric["concepts"]
 
@@ -724,9 +678,8 @@ def evaluate_concepts(student_text, rubric):
     candidate_texts = [c["text"] for c in candidates]
     candidate_types = [c["type"] for c in candidates]
 
-    candidate_embeddings = model.encode(
+    candidate_embeddings = SENT_MODEL.encode(
         candidate_texts,
-        batch_size=8,
         convert_to_numpy=True,
         normalize_embeddings=True,
         show_progress_bar=False,
@@ -736,9 +689,8 @@ def evaluate_concepts(student_text, rubric):
 
     concept_texts = [c["text"] for c in concepts]
 
-    concept_embeddings = model.encode(
+    concept_embeddings = SENT_MODEL.encode(
         concept_texts,
-        batch_size=8,
         convert_to_numpy=True,
         normalize_embeddings=True,
         show_progress_bar=False,
