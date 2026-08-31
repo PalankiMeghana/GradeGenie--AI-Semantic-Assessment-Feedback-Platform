@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/components/Upload.css';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://aigrader-553618692443.europe-west1.run.app/api';
 
 const defaultSubjectsFallback = [
   'Computer Fundamentals',
