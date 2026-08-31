@@ -48,17 +48,7 @@ const Landing = (props) => {
                 </blockquote>
                 <p className="quote-author">— Malcolm X</p>
 
-                <Link
-                  to="upload"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="cta-button"
-                >
-                  Try It Now
-                  <ArrowRight className="arrow-icon" />
-                </Link>
+                
               </div>
             </div>
 
