@@ -32,7 +32,7 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
         </RouterLink>
 
         <button className="navbar-toggle" onClick={toggleMenu}>
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
