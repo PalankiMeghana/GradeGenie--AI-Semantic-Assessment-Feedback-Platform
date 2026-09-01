@@ -28,7 +28,7 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
       <div className="navbar-container">
         <RouterLink to="/" className="navbar-logo" onClick={closeMenu}>
           <Lightbulb className="logo-icon" size={24} />
-          <span className="logo-text">AI Grader</span>
+          <span className="logo-text">GradeGenie</span>
         </RouterLink>
 
         <button className="navbar-toggle" onClick={toggleMenu}>
